@@ -1,15 +1,6 @@
 require "rubygems"
 require "json"
 
-json_file_path, suffix, junk = ARGV
-
-if not json_file_path 
-	puts "Missing file path to the .json file"
-	abort() 
-end	
-
-suffix == nil ? "-junk" : suffix
-
 #adds a suffix to a file path, i.e. file_path.sh = file_path-suffix.sh
 def add_suffix(file_path, suffix) 
   File.basename(file_path, ".*") + suffix + File.extname(file_path)
@@ -66,10 +57,6 @@ class JsonJunk
 		modified_collection
 	end  	  
 end
-
-
-json_junk = JsonJunk.new(json_file_path, suffix, junk)
-json_junk.junkify()
 
 
 

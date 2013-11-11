@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "json-junk"
+require "json_junk"
 require "ext/file_extensions"
 require "json"
 

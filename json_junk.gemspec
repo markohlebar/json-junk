@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	# Metadata
-  s.name        = 'json_junk'
+  s.name        = 'json-junk'
   s.version     = '0.1.0'
   s.date        = '2013-11-10'
   s.summary     = "Puts junk values in files containing JSON"

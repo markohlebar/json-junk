@@ -1,11 +1,9 @@
 require "rubygems"
 require "json"
+require "ext/file_extensions"
 
-#adds a suffix to a file path, i.e. file_path.sh = file_path-suffix.sh
-def add_suffix(file_path, suffix) 
-  File.basename(file_path, ".*") + suffix + File.extname(file_path)
-end
 
+#checks if the object is a collection
 def is_collection(collection) 
 	collection.respond_to?'each'
 end 
@@ -20,13 +18,15 @@ class JsonJunk
 	def junkify()
 # 		puts @json_file_name
 # 		puts @export_suffix
-		export_file_path = add_suffix(@json_file_path, @export_suffix)
+		export_file_path = File.add_suffix(@json_file_path, @export_suffix)
 		parsed_object = JSON.parse(File.read(@json_file_path))
 		
 		if parsed_object.is_a?(Hash)
 		    modified_hash = recurse_collection_and_junkify_leafs(parsed_object, @junk)
 		    json_string = JSON.pretty_generate(modified_hash)
-		    File.open(export_file_path, 'w').write(json_string)
+		    file = File.open(export_file_path, 'w')
+		    file.write(json_string)
+		    file.close()
 		end 
 	end 
 

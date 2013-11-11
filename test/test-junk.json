@@ -1,0 +1,100 @@
+{
+  "web-app": {
+    "servlet": [
+      {
+        "servlet-name": "junk",
+        "servlet-class": "junk",
+        "init-param": {
+          "configGlossary:installationAt": "junk",
+          "configGlossary:adminEmail": "junk",
+          "configGlossary:poweredBy": "junk",
+          "configGlossary:poweredByIcon": "junk",
+          "configGlossary:staticPath": "junk",
+          "templateProcessorClass": "junk",
+          "templateLoaderClass": "junk",
+          "templatePath": "junk",
+          "templateOverridePath": "junk",
+          "defaultListTemplate": "junk",
+          "defaultFileTemplate": "junk",
+          "useJSP": "junk",
+          "jspListTemplate": "junk",
+          "jspFileTemplate": "junk",
+          "cachePackageTagsTrack": "junk",
+          "cachePackageTagsStore": "junk",
+          "cachePackageTagsRefresh": "junk",
+          "cacheTemplatesTrack": "junk",
+          "cacheTemplatesStore": "junk",
+          "cacheTemplatesRefresh": "junk",
+          "cachePagesTrack": "junk",
+          "cachePagesStore": "junk",
+          "cachePagesRefresh": "junk",
+          "cachePagesDirtyRead": "junk",
+          "searchEngineListTemplate": "junk",
+          "searchEngineFileTemplate": "junk",
+          "searchEngineRobotsDb": "junk",
+          "useDataStore": "junk",
+          "dataStoreClass": "junk",
+          "redirectionClass": "junk",
+          "dataStoreName": "junk",
+          "dataStoreDriver": "junk",
+          "dataStoreUrl": "junk",
+          "dataStoreUser": "junk",
+          "dataStorePassword": "junk",
+          "dataStoreTestQuery": "junk",
+          "dataStoreLogFile": "junk",
+          "dataStoreInitConns": "junk",
+          "dataStoreMaxConns": "junk",
+          "dataStoreConnUsageLimit": "junk",
+          "dataStoreLogLevel": "junk",
+          "maxUrlLength": "junk"
+        }
+      },
+      {
+        "servlet-name": "junk",
+        "servlet-class": "junk",
+        "init-param": {
+          "mailHost": "junk",
+          "mailHostOverride": "junk"
+        }
+      },
+      {
+        "servlet-name": "junk",
+        "servlet-class": "junk"
+      },
+      {
+        "servlet-name": "junk",
+        "servlet-class": "junk"
+      },
+      {
+        "servlet-name": "junk",
+        "servlet-class": "junk",
+        "init-param": {
+          "templatePath": "junk",
+          "log": "junk",
+          "logLocation": "junk",
+          "logMaxSize": "junk",
+          "dataLog": "junk",
+          "dataLogLocation": "junk",
+          "dataLogMaxSize": "junk",
+          "removePageCache": "junk",
+          "removeTemplateCache": "junk",
+          "fileTransferFolder": "junk",
+          "lookInContext": "junk",
+          "adminGroupID": "junk",
+          "betaServer": "junk"
+        }
+      }
+    ],
+    "servlet-mapping": {
+      "cofaxCDS": "junk",
+      "cofaxEmail": "junk",
+      "cofaxAdmin": "junk",
+      "fileServlet": "junk",
+      "cofaxTools": "junk"
+    },
+    "taglib": {
+      "taglib-uri": "junk",
+      "taglib-location": "junk"
+    }
+  }
+}

@@ -1,4 +1,4 @@
 json-junk
 =========
 
-JsonJunk provides an easy interface for inserting junk values in your JSON leaves. 
+Simple interface for inserting junk values into your JSON mocks.
